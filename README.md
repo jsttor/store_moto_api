@@ -1,5 +1,6 @@
 
 
+
 # Mi Servidor Web
 
 ## Jose Sttor
@@ -13,3 +14,12 @@ El primero de ellos es un endpoint de tipo **POST (/create)**, que permite **reg
 El segundo endpoint es de tipo **GET**, encargado de **listar los productos existentes**, obteniendo la información directamente desde la base de datos y retornándola al cliente en formato JSON.
 
 Gracias a la integración entre **NestJS y Prisma**, se logró una comunicación eficiente entre la capa de aplicación y la capa de datos, garantizando un desarrollo más estructurado, limpio y con tipado estático, lo que reduce errores y mejora la productividad durante el desarrollo del proyecto.
+
+**Los pasos para la correcta ejecucion de este proyecto son:**
+1. Descaragar las Libreriras NPM i
+2. Luego sincronizar Prisma con la BAse de Datos (npx prisma generate)
+3. Por ultimo, ejecutarlo(npm run start:dev)
+
+**Nota: Se debe crear el fichero que contiene las variables de entorno**
+
+**Ejemplo:** DATABASE_URL="postgresql://postgres:Salsadetomate1@localhost:5432/store"

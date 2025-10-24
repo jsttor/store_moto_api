@@ -1,47 +1,15 @@
-# 🚀 NestJS Prisma Starter  
-
-**NestJS Prisma Starter** es un boilerplate listo para producción que te permite construir APIs REST robustas con **NestJS**, **Prisma** y **PostgreSQL**. Este proyecto está diseñado con una arquitectura modular y escalable, facilitando el desarrollo backend con buenas prácticas y una configuración optimizada.  
-
-## 🛠️ Tecnologías utilizadas  
-- **NestJS** - Framework progresivo para Node.js  
-- **Prisma ORM** - ORM moderno y tipado para bases de datos  
-- **PostgreSQL** - Base de datos relacional de alto rendimiento  
-- **TypeScript** - Código seguro y escalable  
-- **Docker** - Opcional, para levantar PostgreSQL en contenedores  
-
-## 🚀 Instalación y configuración  
-
-## 1️⃣ Clonar el repositorio  
-```
-git clone https://github.com/Ivnoff1/nestjs-prisma-starter.git
-cd nestjs-prisma-starter
-```
-## 2️⃣ Instalar dependencias
-
-npm install
-
-## 3️⃣ Configurar las variables de entorno
-DATABASE_URL=""
-PORT=3000
-
-Si prefieres usar Docker, levanta un contenedor con PostgreSQL:
-
-docker-compose up -d
-
-## 4️⃣ Configurar Prisma y la base de datos
-
-npx prisma generate
-npx prisma migrate dev --name init
 
 
-5️⃣ Iniciar el servidor
+# Mi Servidor Web
 
-npm run start:dev
+## Jose Sttor
 
-📂 Estructura del proyecto
+---
 
-📦 src
- ┣ 📂 prisma/          # Configuración de Prisma
- ┣ 📜 app.module.ts    # Módulo principal
- ┣ 📜 main.ts          # Punto de entrada de la aplicación
- ┗ 📜 .env.example     # Ejemplo de variables de entorno
+En este proyecto se utilizó el **framework NestJS** junto con la **ORM Prisma**, con el propósito de implementar una arquitectura modular, escalable y de fácil mantenimiento. La aplicación cuenta con **dos endpoints principales** que permiten la interacción con la base de datos.
+
+El primero de ellos es un endpoint de tipo **POST (/create)**, que permite **registrar nuevos productos** en la base de datos. Para ello, se hace uso de las funciones provistas por Prisma, las cuales facilitan las operaciones mediante un enfoque orientado a objetos y un manejo seguro de las consultas.
+
+El segundo endpoint es de tipo **GET**, encargado de **listar los productos existentes**, obteniendo la información directamente desde la base de datos y retornándola al cliente en formato JSON.
+
+Gracias a la integración entre **NestJS y Prisma**, se logró una comunicación eficiente entre la capa de aplicación y la capa de datos, garantizando un desarrollo más estructurado, limpio y con tipado estático, lo que reduce errores y mejora la productividad durante el desarrollo del proyecto.
